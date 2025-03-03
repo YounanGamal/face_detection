@@ -8,8 +8,11 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   AnimatedSplashScreen(
-      splash: Lottie.asset('assets/lottie/Animation.json'),
+    return AnimatedSplashScreen(
+      splash: Transform.scale(
+        scale: 3,
+        child: Lottie.asset('assets/lottie/Animation.json'),
+      ),
       nextScreen: FaceDetectionView(),
       backgroundColor: Colors.black,
     );

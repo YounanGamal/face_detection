@@ -78,14 +78,14 @@ class _FaceDetectionViewBodyState extends State<FaceDetectionViewBody> {
             onPressed: () {
               pickImage(ImageSource.camera);
             },
-            text: 'Take the image',
+            text: 'Take a picture from the camera',
           ),
           SizedBox(height: 20),
           CustomButton(
             onPressed: () {
               pickImage(ImageSource.gallery);
             },
-            text: 'Take the gallery',
+            text: 'Choose image from gallery',
           ),
           SizedBox(height: 20),
           Text(
